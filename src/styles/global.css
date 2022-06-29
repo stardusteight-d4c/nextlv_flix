@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans bg-[#141414]
+}
+
+button {
+  @apply px-4 py-1 rounded-lg ease-in-out duration-500 
+}
+
+li {
+  @apply transition-opacity hover:opacity-70  border-b border-zinc-900 md:border-none
+}
+
+span.card {
+  @apply p-[5px] text-white font-bold
+}
+
+.control-btn {
+  @apply bg-none p-0 text-6xl cursor-pointer
+}
+
+trending.h1 {
+  @apply mt-0
+}
+
+footer i {
+  @apply w-[40px] h-[40px] items-center leading-[40px] rounded-full bg-gray-700
+}
