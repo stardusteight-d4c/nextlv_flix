@@ -30,11 +30,11 @@ const HomeCard = ({
             <p>{desc}</p>
             <div className="my-4">
               <h4 className="font-medium mb-1 text-lg">
-                <span className="card">Starring </span>
+                <span className="card">Estrelando </span>
                 {starring}
               </h4>
               <h4 className="font-medium mb-1 text-lg">
-                <span className="card">Genres </span>
+                <span className="card">Gêneros </span>
                 {genres}
               </h4>
               <h4 className="font-medium mb-1 text-lg">

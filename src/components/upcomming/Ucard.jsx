@@ -1,19 +1,19 @@
 export const Ucard = ({ item: { id, cover, name, time } }) => {
   return (
     <>
-      <div className="relative text-white duration-300 hover:scale-105">
-        <div className="img border-l-4 ">
+      <div className="mb-8 relative text-white duration-300 hover:scale-105 group">
+        <div>
           <img
             src={cover}
-            className="w-[350px] absolute top-0 left-0 -z-20 object-cover opacity-90 border-white duration-300 hover:border-red-300 hover:scale-105"
+            className="w-[350px] h-full absolute top-0 left-0 -z-20 object-cover opacity-90"
           />
         </div>
-        <div className="py-[70px] px-[50px]">
-          <h3 className="font-medium mb-[15px]">{name}</h3>
+        <div className="p-9">
+          <h3 className="font-medium px-2 rounded-full mb-[15px] bg-gradient-to-r from-black/70 to-transparent">{name}</h3>
           <span>{time}</span>
           <br />
-          <button className="mt-[15px] py-[12px] px-[20px] text-sm bg-red-300 cursor-pointer">
-            <i className="ri-play-circle-fill  mr-[10px]"></i> ASSISTIR AGORA
+          <button className="mt-4 py-2 px-4 text-sm bg-black/90 cursor-pointer flex items-center duration-300 ease-in-out group-hover:bg-red-300/90">
+            <i className="ri-play-circle-fill text-3xl mr-[10px]"></i> ASSISTIR AGORA
           </button>
         </div>
       </div>

@@ -12,10 +12,10 @@ export const HomePage = () => {
   return (
     <>
       <Homes />
-      <Upcomming items={upcomeData} title="Upcomming Movies" />
-      <Upcomming items={latestData} title="Latest Movies" />
+      <Upcomming items={upcomeData} title="Próximos filmes" />
+      <Upcomming items={latestData} title="Últimos filmes" />
       <Trending />
-      <Upcomming items={recommendedData} title="Recommended Movies" />
+      <Upcomming items={recommendedData} title="Filmes recomendados" />
     </>
   )
 }

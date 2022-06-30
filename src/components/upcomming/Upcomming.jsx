@@ -5,9 +5,12 @@ import { Ucard } from './Ucard'
 const SampleNextArrow = (props) => {
   const { onClick } = props
   return (
-    <div className="control-btn absolute top-1/2 right-[2%]" onClick={onClick}>
+    <div
+      className="control-btn absolute top-1/3 right-[-64px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
+      onClick={onClick}
+    >
       <button className="next">
-        <i className="ri-arrow-right-circle-fill"></i>
+        <i class="ri-arrow-right-s-line"></i>
       </button>
     </div>
   )
@@ -17,11 +20,11 @@ const SamplePrevArrow = (props) => {
   const { onClick } = props
   return (
     <div
-      className="control-btn  absolute top-1/2 left-[2%] z-50"
+      className="control-btn  absolute top-1/3 left-[-77px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
       onClick={onClick}
     >
       <button className="next">
-        <i className="ri-arrow-left-circle-fill"></i>
+        <i class="ri-arrow-left-s-line"></i>
       </button>
     </div>
   )
@@ -49,11 +52,11 @@ export const Upcomming = ({ items, title }) => {
 
   return (
     <>
-      <section className="max-w-[95%] md:max-w-[95%] m-auto">
-        <div className="">
-          <div className="font-medium my-[30px] text-white flex justify-between">
-            <h1>{title}</h1>
-            <Link to="/" className="bg-red-300">
+      <section className="max-w-[80%] m-auto">
+        <div>
+          <div className="my-6 text-white flex justify-between items-center">
+            <h1 className="font-bold text-2xl">{title}</h1>
+            <Link to="/" className="text-red-300 font-bold text-base">
               View All
             </Link>
           </div>
