@@ -69,7 +69,7 @@ const Header = () => {
             <i className="fa fa-bell ml-8 p-2 cursor-pointer border-2 rounded-full duration-300 hover:scale-110"></i>
             <i className="fa fa-user ml-8 p-2 cursor-pointer border-2 rounded-full duration-300 hover:scale-110"></i>
           </div>
-          <button className="hidden border-red-300 border-2 md:block font-semibold text-lg">
+          <button className="hidden border-red-300 border-2 md:block font-semibold text-lg hover:scale-105">
             Assinar agora
           </button>
         </nav>

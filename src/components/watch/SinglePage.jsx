@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { homeData, recommended } from '../../dummyData'
+import { homeData, recommended, trending } from '../../dummyData'
 import { Upcomming } from '../upcomming/Upcomming'
 
 export const SinglePage = () => {
@@ -15,12 +15,19 @@ export const SinglePage = () => {
     }
   }, [id])
 
+  useEffect(() => {
+    let video = trending.find((video) => video.id === parseInt(id))
+    if (video) {
+      setVideo(video)
+    }
+  }, [id])
+
   return (
     <>
       {video ? (
         <>
           <section className="bg-black text-white pb-8 mb-16 border-b border-zinc-600">
-            <div className="bg-gray-900 py-[15px] flex justify-center items-center">
+            <div className="bg-red-300 py-[15px] flex justify-center items-center">
               <h1 className="uppercase text-xl font-bold">{video.name}</h1>
               <span className="tracking-widest ml-[10px]"> | {video.time}</span>
             </div>
@@ -54,7 +61,7 @@ export const SinglePage = () => {
                 <h3 className='font-semibold'>Compartilhe: </h3>
                 <i class="ri-facebook-circle-fill text-3xl px-2 cursor-pointer"></i>
                 <i class="ri-twitter-fill text-3xl px-2 cursor-pointer"></i>
-                <a href="https://api.whatsapp.com/send/?text=https%3A%2F%2Fyoutu.be%2FuD-242dcxRE&type=custom_url&app_absent=0"><i class="ri-whatsapp-fill text-3xl px-2 cursor-pointer"></i></a>
+                <i class="ri-whatsapp-fill text-3xl px-2 cursor-pointer"></i>
               </div>
             </div>
           </section>
