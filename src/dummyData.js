@@ -1,3 +1,5 @@
+import home1 from '../src/assets/images/home1.jpg'
+
 export const homeData = [
   {
     id: 1,
@@ -8,7 +10,7 @@ export const homeData = [
     starring: "Madeleine Knight, Mary Elizabeth",
     genres: "Ação",
     tags: "Ação, Animação, Horror",
-    cover: "./src/assets/images/home1.jpg",
+    cover: home1,
     video: "https://www.youtube.com/embed/uD-242dcxRE",
     date: "15-Mar-2019",
   },

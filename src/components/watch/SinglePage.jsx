@@ -54,7 +54,7 @@ export const SinglePage = () => {
                 <h3 className='font-semibold'>Compartilhe: </h3>
                 <i class="ri-facebook-circle-fill text-3xl px-2 cursor-pointer"></i>
                 <i class="ri-twitter-fill text-3xl px-2 cursor-pointer"></i>
-                <i class="ri-whatsapp-fill text-3xl px-2 cursor-pointer"></i>
+                <a href="https://api.whatsapp.com/send/?text=https%3A%2F%2Fyoutu.be%2FuD-242dcxRE&type=custom_url&app_absent=0"><i class="ri-whatsapp-fill text-3xl px-2 cursor-pointer"></i></a>
               </div>
             </div>
           </section>
