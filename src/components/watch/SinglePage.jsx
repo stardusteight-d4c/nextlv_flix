@@ -19,47 +19,46 @@ export const SinglePage = () => {
     <>
       {video ? (
         <>
-          <section className="bg-black text-white">
+          <section className="bg-black text-white pb-8 mb-16 border-b border-zinc-600">
             <div className="bg-gray-900 py-[15px] flex justify-center items-center">
-              <h1 className="uppercase text-xl">{video.name}</h1>
-              <span className="tracking-widest ml-[10px]">
-                {' '}
-                | {video.time} |{' '}
-              </span>{' '}
-              <span>HD</span>
+              <h1 className="uppercase text-xl font-bold">{video.name}</h1>
+              <span className="tracking-widest ml-[10px]"> | {video.time}</span>
             </div>
             <div className="max-w-[80%] m-auto">
-                <iframe
-                  className="m-auto"
-                  width="660"
-                  height="315"
-                  src={video.video}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullscreen
-                ></iframe>
-              <div className="para">
-                <h3 className='font-normal'>Date: {video.date}</h3>
-                <p className='leading-6'>{video.desc}</p>
-                <p className='leading-6'>
-                  Get access to the direct Project Overview with this report.
-                  Just by a quick glance, you’ll have an idea of the total tasks
-                  allotted to the team, number of milestones given & completed,
-                  total Links created for the project and the total time taken
-                  by all the users. Each section would elaborate the data
-                  further, if chosen.
+              <iframe
+                className="m-auto"
+                width="660"
+                height="315"
+                src={video.video}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullscreen
+              ></iframe>
+              <div className="my-8">
+                <h3 className="font-bold my-8 ">{video.date}</h3>
+                <p className="leading-6 text-xl">{video.desc}</p>
+                <p className="text-zinc-600 leading-4 font-light py-4">
+                  A lei considera que as obras protegidas, dentre
+                  outras, são: textos, vídeos, obras fotográficas, ilustrações,
+                  desenhos, programa de computador, bases de dados e outras
+                  obras, que, por sua seleção, organização ou disposição de seu
+                  conteúdo, constituam uma criação intelectual.
+                </p>
+                <p className="text-zinc-600  font-light leading-4">
+                  Cabe ao autor o direito exclusivo de utilizar, fruir
+                  e dispor da obra literária, artística ou científica.
                 </p>
               </div>
-              <div className="flex justify-start items-center border-b border-gray-300">
-                <h3>Share: </h3>
-                <img src="https://img.icons8.com/color/48/000000/facebook-new.png" />
-                <img src="https://img.icons8.com/fluency/48/000000/twitter-circled.png" />
-                <img src="https://img.icons8.com/fluency/48/000000/linkedin-circled.png" />
+              <div className="flex justify-start items-center text-white">
+                <h3 className='font-semibold'>Compartilhe: </h3>
+                <i class="ri-facebook-circle-fill text-3xl px-2 cursor-pointer"></i>
+                <i class="ri-twitter-fill text-3xl px-2 cursor-pointer"></i>
+                <i class="ri-whatsapp-fill text-3xl px-2 cursor-pointer"></i>
               </div>
             </div>
           </section>
-          <Upcomming items={recommendedData} title="Recommended Movies" />
+          <Upcomming items={recommendedData} title="Filmes recomendados" />
         </>
       ) : null}
     </>
