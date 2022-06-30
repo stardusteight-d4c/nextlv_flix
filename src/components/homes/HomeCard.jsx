@@ -7,10 +7,10 @@ const HomeCard = ({
   return (
     <>
       <div className="box">
-        <div className="absolute top-0 w-full h-[100vh] -z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-[100vh] after:z-40 after:bg-gradient-to-br after:from-black/40 after:to-black/90">
+        <div className="absolute top-0 w-full -z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-[100vh] after:z-40 after:bg-gradient-to-br after:from-black/40 after:to-black/90">
           <img src={cover} className="w-[100vw] h-[100vh] object-cover" />
         </div>
-        <div className="md:py-20 md:px-32 flex flex-col md:flex-row">
+        <div className="md:my-20 md:px-32 flex flex-col md:flex-row">
           <div className="md:max-w-[55vw]">
             <h1 className="md:mt-6 mt-24 text-5xl text-center md:text-start md:text-8xl uppercase font-extrabold bg-texture bg-repeat bg-clip-text text-transparent antialiased">
               {name}

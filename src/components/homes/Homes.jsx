@@ -6,7 +6,7 @@ export const Homes = () => {
   const [items, setItems] = useState(homeData)
 
   return (
-    <div className='h-[100vh]'>
+    <div className='h-[95vh]'>
       <section className="absolute top-0 left-0 w-[100%] h-[100vh] text-white">
         <Home items={items} />
       </section>
