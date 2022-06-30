@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans bg-[#141414]
+  @apply font-sans bg-black
 }
 
 button {
@@ -24,8 +24,4 @@ span.card {
 
 trending.h1 {
   @apply mt-0
-}
-
-footer i {
-  @apply w-[40px] h-[40px] items-center leading-[40px] rounded-full bg-gray-700
 }

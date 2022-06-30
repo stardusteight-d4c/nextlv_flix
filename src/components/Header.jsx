@@ -20,7 +20,9 @@ const Header = () => {
             )}
           </button>
           <div>
-            <img src={logo} className="w-[150px]" />
+            <Link to='/'>
+              <img src={logo} className="w-[150px]" />
+            </Link>
           </div>
 
           <ul
@@ -30,32 +32,32 @@ const Header = () => {
                 : 'hidden md:flex md:items-center'
             }
           >
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/" className="md:ml-5">
                 Home
               </Link>
             </li>
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/series" className="md:ml-5">
                 Séries
               </Link>
             </li>
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/movies" className="md:ml-5">
                 Filmes
               </Link>
             </li>
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/pages" className="md:ml-5">
                 Páginas
               </Link>
             </li>
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/pricing" className="md:ml-5">
                 Preços
               </Link>
             </li>
-            <li className='py-4'>
+            <li className="py-4">
               <Link to="/contact" className="md:ml-5">
                 Contato
               </Link>

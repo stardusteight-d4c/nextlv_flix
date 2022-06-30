@@ -9,7 +9,7 @@ const SampleNextArrow = (props) => {
   return (
     <div className="control-btn absolute top-1/2 right-[2%]" onClick={onClick}>
       <button className="next">
-        <i className="ri-arrow-right-circle-fill text-white"></i>
+        <i className="ri-arrow-right-circle-fill text-white ease-in-out duration-500 hover:text-red-300"></i>
       </button>
     </div>
   )
@@ -23,7 +23,7 @@ const SamplePrevArrow = (props) => {
       onClick={onClick}
     >
       <button className="next">
-        <i className="ri-arrow-left-circle-fill text-white"></i>
+        <i className="ri-arrow-left-circle-fill text-white ease-in-out duration-500 hover:text-red-300"></i>
       </button>
     </div>
   )
