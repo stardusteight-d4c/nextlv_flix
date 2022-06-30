@@ -1,11 +1,11 @@
 export const Ucard = ({ item: { id, cover, name, time } }) => {
   return (
     <>
-      <div className="mb-8 relative text-white duration-300 hover:scale-105 group">
+      <div className="mb-2 md:mb-8 relative text-white duration-300 hover:scale-105 group">
         <div>
           <img
             src={cover}
-            className="w-[350px] h-full absolute top-0 left-0 -z-20 object-cover opacity-90"
+            className="w-[100vw] md:w-[350px] h-full absolute top-0 left-0 -z-20 object-cover opacity-90"
           />
         </div>
         <div className="p-9">

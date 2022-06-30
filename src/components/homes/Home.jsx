@@ -7,7 +7,7 @@ import Slider from 'react-slick'
 const SampleNextArrow = (props) => {
   const { onClick } = props
   return (
-    <div className="control-btn absolute top-1/2 right-[2%]" onClick={onClick}>
+    <div className="control-btn absolute top-1/2 right-[2%] hidden md:block" onClick={onClick}>
       <button className="next">
         <i className="ri-arrow-right-circle-fill text-white ease-in-out duration-500 hover:text-red-300"></i>
       </button>
@@ -19,7 +19,7 @@ const SamplePrevArrow = (props) => {
   const { onClick } = props
   return (
     <div
-      className="control-btn  absolute top-1/2 left-[2%] z-50"
+      className="control-btn absolute top-1/2 left-[2%] z-50 hidden md:block"
       onClick={onClick}
     >
       <button className="next">

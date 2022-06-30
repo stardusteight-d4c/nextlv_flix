@@ -33,9 +33,7 @@ export const SinglePage = () => {
             </div>
             <div className="max-w-[80%] m-auto">
               <iframe
-                className="m-auto"
-                width="660"
-                height="315"
+                className="m-auto md:w-[660px] h-[315px]"
                 src={video.video}
                 title="YouTube video player"
                 frameBorder="0"

@@ -6,7 +6,7 @@ const SampleNextArrow = (props) => {
   const { onClick } = props
   return (
     <div
-      className="control-btn absolute top-[29%] right-[-64px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
+      className="hidden md:block control-btn absolute top-[29%] right-[-64px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
       onClick={onClick}
     >
       <button className="next">
@@ -20,7 +20,7 @@ const SamplePrevArrow = (props) => {
   const { onClick } = props
   return (
     <div
-      className="control-btn  absolute top-[29%] left-[-77px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
+      className="hidden md:block control-btn  absolute top-[29%] left-[-77px] text-white z-50 ease-in-out duration-500 hover:text-red-300"
       onClick={onClick}
     >
       <button className="next">
@@ -41,10 +41,12 @@ export const Upcomming = ({ items, title }) => {
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        brakpoint: 768,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
         },
       },
     ],
@@ -52,15 +54,15 @@ export const Upcomming = ({ items, title }) => {
 
   return (
     <>
-      <section className="max-w-[80%] m-auto">
+      <section className="max-w-[100%] md:max-w-[80%] m-auto">
         <div>
-          <div className="my-6 text-white flex justify-between items-center">
+          <div className="mx-2 md:mx-0 my-6 text-white flex justify-between items-center">
             <h1 className="font-bold text-2xl">{title}</h1>
             <Link to="/" className="text-red-300 font-bold text-base">
               View All
             </Link>
           </div>
-          <div className="">
+          <div>
             <Slider {...settings}>
               {items.map((item) => (
                 <Ucard key={item.id} item={item} />

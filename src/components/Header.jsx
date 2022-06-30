@@ -38,27 +38,27 @@ const Header = () => {
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/series" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Séries
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/movies" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Filmes
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/pages" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Páginas
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/pricing" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Preços
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/contact" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Contato
               </Link>
             </li>

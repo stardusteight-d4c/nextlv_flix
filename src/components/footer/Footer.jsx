@@ -2,8 +2,8 @@ export const Footer = () => {
   return (
     <>
       <footer className="text-white bg-black border-t-[1px] border-zinc-600 mt-24 p-8">
-        <div className="flex justify-start items-start">
-          <div className="max-w-[80vw]">
+        <div className="flex items-center justify-center md:justify-start md:items-start">
+          <div className="max-w-[80vw] hidden md:block">
             <ul className="mb-4 flex">
               <li className="mr-[30px] cursor-pointer">Temos de Uso</li>
               <li className="mr-[30px] cursor-pointer">
@@ -12,7 +12,7 @@ export const Footer = () => {
               <li className="mr-[30px] cursor-pointer">Blog</li>
               <li className="mr-[30px] cursor-pointer">FAQ</li>
             </ul>
-            <span className="text-zinc-600 font-light">
+            <span className="text-zinc-600 font-light ">
               © 2022 NextLv. Todos os direitos reservados. Todos os vídeos e
               programas nesta plataforma são marcas registradas e todas as
               imagens e conteúdos relacionados são de propriedade da NextLv Inc.
