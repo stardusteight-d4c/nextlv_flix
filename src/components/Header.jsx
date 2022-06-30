@@ -58,9 +58,9 @@ const Header = () => {
               </Link>
             </li>
             <li className="py-4">
-              <Link to="/" className="md:ml-5">
+              <a href="https://nextlv-banner.vercel.app" className="md:ml-5">
                 Contato
-              </Link>
+              </a>
             </li>
           </ul>
 
