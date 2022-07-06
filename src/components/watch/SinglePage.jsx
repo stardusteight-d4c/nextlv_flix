@@ -38,7 +38,7 @@ export const SinglePage = () => {
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullscreen
+                allowFullScreen
               ></iframe>
               <div className="my-8">
                 <h3 className="font-bold my-8 ">{video.date}</h3>
