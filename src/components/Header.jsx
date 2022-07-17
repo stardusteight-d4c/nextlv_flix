@@ -58,18 +58,18 @@ const Header = () => {
               </Link>
             </li>
             <li className="py-4">
-              <a href="https://nextlv-banner.vercel.app" className="md:ml-5">
+              <Link to="/" className="md:ml-5">
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
 
           <div className="flex items-center">
-            <i className="fa fa-search hidden md:block ml-8 p-2 cursor-pointer border-2 rounded-full duration-300 hover:scale-110"></i>
-            <i className="fa fa-bell ml-8 p-2 cursor-pointer border-2 rounded-full duration-300 hover:scale-110"></i>
-            <i className="fa fa-user ml-8 p-2 cursor-pointer border-2 rounded-full duration-300 hover:scale-110"></i>
+            <i className="hidden p-2 ml-8 duration-300 border-2 rounded-full cursor-pointer fa fa-search md:block hover:scale-110"></i>
+            <i className="p-2 ml-8 duration-300 border-2 rounded-full cursor-pointer fa fa-bell hover:scale-110 hover:red"></i>
+            <i className="p-2 ml-8 duration-300 border-2 rounded-full cursor-pointer fa fa-user hover:scale-110"></i>
           </div>
-          <button className="hidden border-red-300 border-2 md:block font-semibold text-lg hover:scale-105">
+          <button className="hidden text-lg font-semibold border border-red-300 md:block hover:scale-105">
             Assinar agora
           </button>
         </nav>

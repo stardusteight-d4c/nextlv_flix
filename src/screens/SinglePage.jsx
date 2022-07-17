@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { homeData, recommended, trending } from '../../dummyData'
-import { Upcomming } from '../upcomming/Upcomming'
+import { homeData, recommended, trending } from '../dummyData'
+import { Upcomming } from '../components/upcomming/Upcomming'
 
 export const SinglePage = () => {
   const { id } = useParams()
@@ -26,9 +26,9 @@ export const SinglePage = () => {
     <>
       {video ? (
         <>
-          <section className="bg-black text-white pb-8 mb-16 border-b border-zinc-600">
+          <section className="pb-8 mb-16 text-white bg-black border-b border-zinc-600">
             <div className="bg-red-300 py-[15px] flex justify-center items-center">
-              <h1 className="uppercase text-xl font-bold">{video.name}</h1>
+              <h1 className="text-xl font-bold uppercase">{video.name}</h1>
               <span className="tracking-widest ml-[10px]"> | {video.time}</span>
             </div>
             <div className="max-w-[80%] m-auto">
@@ -41,21 +41,21 @@ export const SinglePage = () => {
                 allowFullScreen
               ></iframe>
               <div className="my-8">
-                <h3 className="font-bold my-8 ">{video.date}</h3>
-                <p className="leading-6 text-xl">{video.desc}</p>
-                <p className="text-zinc-600 leading-4 font-light py-4">
+                <h3 className="my-8 font-bold ">{video.date}</h3>
+                <p className="text-xl leading-6">{video.desc}</p>
+                <p className="py-4 font-light leading-4 text-zinc-600">
                   A lei considera que as obras protegidas, dentre
                   outras, são: textos, vídeos, obras fotográficas, ilustrações,
                   desenhos, programa de computador, bases de dados e outras
                   obras, que, por sua seleção, organização ou disposição de seu
                   conteúdo, constituam uma criação intelectual.
                 </p>
-                <p className="text-zinc-600  font-light leading-4">
+                <p className="font-light leading-4 text-zinc-600">
                   Cabe ao autor o direito exclusivo de utilizar, fruir
                   e dispor da obra literária, artística ou científica.
                 </p>
               </div>
-              <div className="flex justify-start items-center text-white">
+              <div className="flex items-center justify-start text-white">
                 <h3 className='font-semibold'>Compartilhe: </h3>
                 <i class="ri-facebook-circle-fill text-3xl px-2 cursor-pointer"></i>
                 <i class="ri-twitter-fill text-3xl px-2 cursor-pointer"></i>

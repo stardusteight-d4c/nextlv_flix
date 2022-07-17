@@ -7,15 +7,15 @@ const HomeCard = ({
   return (
     <>
       <div className="box">
-        <div className="absolute top-0 w-full -z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-[100vh] after:z-40 after:bg-gradient-to-br after:from-black/40 after:to-black/90">
+        <div className="absolute top-0 h-screen w-full -z-10 after:absolute after:top-0 after:left-0 after:w-full after:h-[100vh] after:z-40 after:bg-gradient-to-br after:from-black/40 after:to-black/90">
           <img src={cover} className="w-[100vw] h-[100vh] object-cover" />
         </div>
-        <div className="md:my-20 md:px-32 flex flex-col md:flex-row">
+        <div className="flex flex-col md:my-20 md:px-32 md:flex-row">
           <div className="md:max-w-[55vw]">
-            <h1 className="md:mt-6 mt-24 text-5xl text-center md:text-start md:text-8xl uppercase font-extrabold bg-texture bg-repeat bg-clip-text text-transparent antialiased">
+            <h1 className="mt-24 text-5xl antialiased font-extrabold text-center text-transparent uppercase bg-repeat md:mt-6 md:text-start md:text-8xl bg-texture bg-clip-text">
               {name}
             </h1>
-            <div className="my-2 md:my-5 text-center md:text-start md:flex">
+            <div className="my-2 text-center md:my-5 md:text-start md:flex">
               <div className="text-red-300 mr-[5px]">
                 <i className="fas fa-star"></i>
                 <i className="fa fa-star"></i>
@@ -24,20 +24,20 @@ const HomeCard = ({
                 <i className="fa fa-star-half"></i>
               </div>
               <label className="mx-5">{rating}(Imdb)</label>
-              <span className="bg-gray-300 card hidden md:block">GP</span>
-              <label className="mx-5 hidden md:block">{time}</label>
+              <span className="hidden bg-gray-300 card md:block">GP</span>
+              <label className="hidden mx-5 md:block">{time}</label>
             </div>
-            <p className='px-8 text-center md:text-start md:px-0'>{desc}</p>
-            <div className="my-4 hidden md:block">
-              <h4 className="font-medium mb-1 text-lg">
+            <p className="px-8 text-center md:text-start md:px-0">{desc}</p>
+            <div className="hidden my-4 md:block">
+              <h4 className="mb-1 text-lg font-medium">
                 <span className="card">Estrelando </span>
                 {starring}
               </h4>
-              <h4 className="font-medium mb-1 text-lg">
+              <h4 className="mb-1 text-lg font-medium">
                 <span className="card">Gêneros </span>
                 {genres}
               </h4>
-              <h4 className="font-medium mb-1 text-lg">
+              <h4 className="mb-1 text-lg font-medium">
                 <span className="card">Tags </span>
                 {tags}
               </h4>

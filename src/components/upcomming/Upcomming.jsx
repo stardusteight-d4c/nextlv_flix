@@ -54,11 +54,11 @@ export const Upcomming = ({ items, title }) => {
 
   return (
     <>
-      <section className="max-w-[100%] md:max-w-[80%] m-auto">
+      <section className="max-w-[100%] md:max-w-[80%] mx-auto py-8">
         <div>
-          <div className="mx-2 md:mx-0 my-6 text-white flex justify-between items-center">
-            <h1 className="font-bold text-2xl">{title}</h1>
-            <Link to="/" className="text-red-300 font-bold text-base">
+          <div className="flex items-center justify-between mx-2 my-6 text-white md:mx-0">
+            <h1 className="text-2xl font-bold">{title}</h1>
+            <Link to="/" className="text-base font-bold text-red-300">
               View All
             </Link>
           </div>

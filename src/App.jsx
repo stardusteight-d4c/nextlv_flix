@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Footer } from './components/footer/Footer'
 import Header from './components/Header'
-import { SinglePage } from './components/watch/SinglePage'
-import { HomePage } from './home/HomePage'
+import { SinglePage } from './screens/SinglePage'
+import { HomePage } from './screens/HomePage'
 
 function App() {
   return (
